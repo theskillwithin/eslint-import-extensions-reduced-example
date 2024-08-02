@@ -48,6 +48,18 @@ module.exports = {
           typescript: {},
         },
       },
+      rules: {
+        "import/extensions": [
+          "error",
+          "always",
+          {
+            js: "error",
+            jsx: "never",
+            ts: "never",
+            tsx: "never",
+          },
+        ],
+      }
     },
 
     // Typescript

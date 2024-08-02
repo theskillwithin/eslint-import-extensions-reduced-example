@@ -6,8 +6,13 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import "./tailwind.css";
+import map from "lodash/map";
+import { testFunction } from "./foo";
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  const test = map([1, 2, 3], (item) => item + 1);
+  const test2 = testFunction("hello");
+  console.log(test, test2);
   return (
     <html lang="en">
       <head>
