@@ -47,6 +47,7 @@ module.exports = {
         "import/resolver": {
           typescript: {},
         },
+        "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
       },
       rules: {
         "import/extensions": [
