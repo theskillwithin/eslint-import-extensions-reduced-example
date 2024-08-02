@@ -6,8 +6,8 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import "./tailwind.css";
-import map from "lodash/map";
-import { testFunction } from "./foo";
+import map from "lodash/map"; // want .js to be required here
+import { testFunction } from "./foo"; // do not NOT want .ts to be required here
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const test = map([1, 2, 3], (item) => item + 1);
