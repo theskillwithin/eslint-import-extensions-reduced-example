@@ -47,14 +47,13 @@ module.exports = {
         "import/resolver": {
           typescript: {},
         },
-        "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
       },
       rules: {
         "import/extensions": [
           "error",
           "always",
           {
-            js: "error",
+            js: "always",
             jsx: "never",
             ts: "never",
             tsx: "never",
